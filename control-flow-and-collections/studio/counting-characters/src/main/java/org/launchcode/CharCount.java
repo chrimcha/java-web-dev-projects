@@ -5,7 +5,7 @@ import java.util.Map;
 import java.util.Scanner;
 
 
-public class Main {
+public class CharCount {
     public static void main(String[] args) {
 
         HashMap<Character, Integer> characterCounts = new HashMap<>();
@@ -15,14 +15,13 @@ public class Main {
         String userInputString = input.nextLine();
         String testString = userInputString.toLowerCase();
 
-        String replacedNonAlpha = testString.replaceAll("^.[^a-zA-Z0-9 ].$", "");
+//        String replacedNonAlpha = testString.replaceAll("^.[^a-zA-Z0-9 ].$", "");
         //complete this below
 //        if  (hasNonAlpha) {
 //            do something
 //        }
 
 //        boolean hasNonAlpha = s.matches("^.[^a-zA-Z0-9 ].$");
-
 //        String testString = "";
 
         char[] characterInString = testString.toCharArray();
