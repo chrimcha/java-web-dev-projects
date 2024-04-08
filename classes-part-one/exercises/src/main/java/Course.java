@@ -7,30 +7,30 @@ public class Course {
     private Teacher instructor;
     private ArrayList<Student> enrolledStudents;
 
-    public Course(String topic, Teacher instructor, ArrayList<Student> enrolledStudents) {
-        this.topic = topic;
-        this.instructor = instructor;
-        this.enrolledStudents = enrolledStudents;
+    public Course(String aTopic, Teacher aInstructor, ArrayList<Student> aEnrolledStudents) {
+        this.topic = aTopic;
+        this.instructor = aInstructor;
+        this.enrolledStudents = aEnrolledStudents;
     }
 
-    public void setTopic(String topic) {
-        this.topic = topic;
+    public void setTopic(String aTopic) {
+        this.topic = aTopic;
     }
 
     public String getTopic() {
         return topic;
     }
 
-    public void setInstructor(Teacher instructor) {
-        this.instructor = instructor;
+    public void setInstructor(Teacher aInstructor) {
+        this.instructor = aInstructor;
     }
 
     public Teacher getInstructor() {
         return instructor;
     }
 
-    public void setEnrolledStudents(ArrayList<Student> enrolledStudents) {
-        this.enrolledStudents = enrolledStudents;
+    public void setEnrolledStudents(ArrayList<Student> aEnrolledStudents) {
+        this.enrolledStudents = aEnrolledStudents;
     }
 
     public ArrayList<Student> getEnrolledStudents() {

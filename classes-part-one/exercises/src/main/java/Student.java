@@ -5,11 +5,11 @@ public class Student {
         private double gpa = 0.0;
 
         // constructor allows for the creation of Student objects where the code creating the object provides initial values for each of the fields; would be most useful for creating a transfer student, where credits and a GPA might already be non-zero. However, for all new students, it would be safe to initialize numberOfCredits and gpa to be 0
-        public Student(String name, int studentId, int numberOfCredits, double gpa) {
-                this.name = name;
-                this.studentId = studentId;
-                this.numberOfCredits = numberOfCredits;
-                this.gpa = gpa;
+        public Student(String aName, int aStudentId, int aNumberOfCredits, double aGpa) {
+                this.name = aName;
+                this.studentId = aStudentId;
+                this.numberOfCredits = aNumberOfCredits;
+                this.gpa = aGpa;
         }
 
         // allows for the creation of Student objects with only name and studentId
@@ -48,7 +48,7 @@ public class Student {
         */
 
         public void setName(String aName) {
-                name = aName;
+                this.name = aName;
         }
         // or
         /*
@@ -62,7 +62,7 @@ public class Student {
         }
 
         public void setStudentId(int aStudentId) {
-                studentId = aStudentId;
+                this.studentId = aStudentId;
         }
 
         public int getNumberOfCredits() {
@@ -70,7 +70,7 @@ public class Student {
         }
 
         public void setNumberOfCredits(int aNumberOfCredits) {
-                numberOfCredits = aNumberOfCredits;
+                this.numberOfCredits = aNumberOfCredits;
         }
 
         public double getGpa() {
@@ -78,7 +78,7 @@ public class Student {
         }
 
         private void setGpa(double aGpa) {
-                gpa = aGpa;
+                this.gpa = aGpa;
         }
 
         // To instantiate the Student class, add your code to the main in the file, SchoolPractice.

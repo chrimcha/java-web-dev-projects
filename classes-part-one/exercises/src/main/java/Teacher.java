@@ -4,39 +4,39 @@ public class Teacher {
     private String subject;
     private int yearsTeaching;
 
-    public Teacher(String firstName, String lastName, String subject, int yearsTeaching) {
-        this.firstName = firstName;
-        this.lastName = lastName;
-        this.subject = subject;
-        this.yearsTeaching = yearsTeaching;
+    public Teacher(String aFirstName, String aLastName, String aSubject, int aYearsTeaching) {
+        this.firstName = aFirstName;
+        this.lastName = aLastName;
+        this.subject = aSubject;
+        this.yearsTeaching = aYearsTeaching;
     }
 
-    public void setFirstName(String firstName) {
-        this.firstName = firstName;
+    public void setFirstName(String aFirstName) {
+        this.firstName = aFirstName;
     }
 
     public String getFirstName() {
         return firstName;
     }
 
-    public void setLastName(String lastName) {
-        this.lastName = lastName;
+    public void setLastName(String aLastName) {
+        this.lastName = aLastName;
     }
 
     public String getLastName() {
         return lastName;
     }
 
-    public void setSubject(String subject) {
-        this.subject = subject;
+    public void setSubject(String aSubject) {
+        this.subject = aSubject;
     }
 
     public String getSubject() {
         return subject;
     }
 
-    public void setYearsTeaching(int yearsTeaching) {
-        this.yearsTeaching = yearsTeaching;
+    public void setYearsTeaching(int aYearsTeaching) {
+        this.yearsTeaching = aYearsTeaching;
     }
 
     public int getYearsTeaching() {
