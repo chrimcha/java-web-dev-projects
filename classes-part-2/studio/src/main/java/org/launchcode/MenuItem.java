@@ -4,7 +4,7 @@ import java.util.ArrayList;
 import java.util.Objects;
 
 public class MenuItem {
-    private String name;
+    private final String name;
     private double price;
     private String description;
     private String category;
