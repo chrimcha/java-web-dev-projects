@@ -50,9 +50,9 @@ public class Restaurant {
 
         Menu weekendMenu1 = new Menu(weekendMenu1Items);
 
-        //access the key of each item in a map
-        for (Map.Entry<String, String> meunItem : openingDayMenuItems.entrySet()) {
-            System.out.println(meunItem.getKey() + " (" + meunItem.getValue() + ")");
-        }
+        //figure out how to iterate over the Menu obj
+//        for (Map.Entry<String, String> meunItem : openingDayMenuItems.entrySet()) {
+//            System.out.println(meunItem.getKey() + " (" + meunItem.getValue() + ")");
+//        }
     }
 }
