@@ -19,15 +19,29 @@ public class BalancedBrackets {
      * @param str - to be validated
      * @return true if balanced, false otherwise
      */
+
     public static boolean hasBalancedBrackets(String str) {
         int brackets = 0;
+        String allBracketsInString = "";
+
         for (char ch : str.toCharArray()) {
             if (ch == '[') {
                 brackets++;
+                allBracketsInString += ch;
             } else if (ch == ']') {
                 brackets--;
+                allBracketsInString += ch;
             }
         }
-        return brackets == 0;
+
+        if (brackets > 0) {
+            return false;
+        } else if (allBracketsInString.equals("][")) {
+            return false;
+        } else if (brackets < 0) {
+            return false;
+        }else {
+            return true;
+        }
     }
 }
