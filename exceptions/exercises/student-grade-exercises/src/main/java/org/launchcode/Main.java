@@ -56,10 +56,10 @@ public class Main {
                 throw new CheckFileExtensionException("Returns -1; File name can not be NULL or an empty String!");
             } catch (CheckFileExtensionException e) {
                 e.printStackTrace();
-                numberOfPointRecieved =- 1;
+                numberOfPointRecieved --;
             }
         } else if (!fileName.contains(".java")) {
-            numberOfPointRecieved = 0;
+            numberOfPointRecieved += 0;
         } else {
             numberOfPointRecieved ++;
         }
